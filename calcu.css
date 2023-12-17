@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: rgba(17, 17, 17, 0.938);
+    
+    background-color: rgba(236, 227, 227, 0.938);
+   
+    
+}
+
+.container{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: rgb(22, 23, 22);
+    box-shadow: inset 5px 5px 8px rgb(51, 51, 53), inset -5px -5px 8px rgb(59, 59, 60);
+             
+    
+}
+
+
+@media (max-width:600px)
+{
+    .container{
+        width: 90%;
+        height:90%;
+    
+        margin:auto
+        
+    }
+}
+
+.output{
+    width: 250px;
+    height: 80px;
+    text-align: end;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 30px;
+    margin-bottom: 10px;
+    background-color: rgb(39, 214, 16);
+    color: #111;
+    border: none;
+
+}
+
+.all-btn{
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+   
+
+}
+
+.all-btn button{
+    width: 50px;
+    height: 50px;
+    margin: 8px;
+  
+    border-radius: 12px 0 12px 0;
+    box-shadow: 0 0 50px rgb(101, 106, 106);
+    border: none;
+    font-size: 25px;
+    font-weight: bold;
+    
+    /* background-color: #111; */
+    background-color: #ed1280;
+    color: #fff;
+}
+
+
+
+.all-btn.plus{
+
+background-color: rgb(255, 0, 111);
+
+
+
+}
+.all-btn button:active{
+    box-shadow: 0 0 10px cyan;
+}
+
+.all-btn .clr{
+    grid-column: span 2;
+    width: 110px;
+    background-color: rgb(247, 12, 12);
+}
+
+.all-btn .plus{
+    grid-row: span 2;
+    height: 110px;
+}
+.all-btn .eql{
+    background-color: cyan;
+}
+
+.all-btn .plus{
+    background-color: rgb(81, 0, 255);
+}
