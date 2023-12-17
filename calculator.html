@@ -1,66 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="calcu.css" />
-    <title>Calculator</title>
-  </head>
-  <body>
-    <div class="container">
-      <input type="text" class="output" placeholder="0" id="result" />
 
-      <div class="all-btn">
-        <button class="clr" onclick="clrAll()">C</button>
-        <button onclick="del()">Del</button>
-        <button onclick="numShow('/')">/</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="calcu.css" />
+  <title>Calculator</title>
+</head>
 
-        <button onclick="numShow('7')">7</button>
-        <button onclick="numShow('8')">8</button>
-        <button onclick="numShow('9')">9</button>
-        <button onclick="numShow('*')">*</button>
-        <button onclick="numShow('4')">4</button>
-        <button onclick="numShow('5')">5</button>
-        <button onclick="numShow('6')">6</button>
-        <button onclick="numShow('-')">-</button>
-        <button onclick="numShow('1')">1</button>
-        <button onclick="numShow('2')">2</button>
-        <button onclick="numShow('3')">3</button>
+<body>
+  <div class="container">
+    <input type="text" class="output" placeholder="0" id="result" />
 
-        <button class="plus" onclick="numShow('+')">+</button>
-        <button onclick="numShow('0')">0</button>
-        <button onclick="numShow('.')">.</button>
-        <button class="eql" onclick="calculate()">=</button>
-      </div>
+    <div class="all-btn">
+      <button class="clr" onclick="clrAll()">C</button>
+      <button onclick="del()">Del</button>
+      <button onclick="numShow('/')">/</button>
+
+      <button onclick="numShow('7')">7</button>
+      <button onclick="numShow('8')">8</button>
+      <button onclick="numShow('9')">9</button>
+      <button onclick="numShow('*')">*</button>
+      <button onclick="numShow('4')">4</button>
+      <button onclick="numShow('5')">5</button>
+      <button onclick="numShow('6')">6</button>
+      <button onclick="numShow('-')">-</button>
+      <button onclick="numShow('1')">1</button>
+      <button onclick="numShow('2')">2</button>
+      <button onclick="numShow('3')">3</button>
+
+      <button class="plus" onclick="numShow('+')">+</button>
+      <button onclick="numShow('0')">0</button>
+      <button onclick="numShow('.')">.</button>
+      <button class="eql" onclick="calculate()">=</button>
     </div>
+  </div>
 
-    <!-- Javascript code -->
-    
-    <script>
-      let result = document.getElementById("result");
+  <!-- Javascript code -->
 
-      function numShow(num) {
-        result.value += num;
-      }
+  <script>
+    let result = document.getElementById("result");
 
-      function clrAll() {
-        result.value = "";
-      }
+    function numShow(num) {
+      result.value += num;
+    }
 
-      function del() {
-        result.value = result.value.slice(0, -1);
-      }
+    function clrAll() {
+      result.value = "";
+    }
 
-      function calculate() {
-        let x = result.value;
+    function del() {
+      result.value = result.value.slice(0, -1);
+    }
 
-        let y = eval(x);
+    function calculate() {
+      let x = result.value;
 
-        result.value = y;
-      }
+      let y = eval(x);
 
-    </script>
+      result.value = y;
+    }
 
-  </body>
+  </script>
+
+</body>
+
 </html>
