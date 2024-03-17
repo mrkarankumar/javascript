@@ -1,0 +1,19 @@
+.Bag {
+
+    background-color: greenyellow;
+
+    border: none;
+    padding: 5px 15px;
+    border-radius: 12px;
+
+}
+
+.wished {
+
+    padding: 5px 15px;
+
+    border:  2px solid black;
+    border-radius: 12px;
+
+
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="MYNTRA.css">
+</head>
+
+<body>
+
+
+
+    <button class="Bag" onclick="cartquantity = cartquantity++;
+
+    document.querySelector('#cart-summary').innerText = `your bag has ${cartquantity} items ` ; 
+    
+    ">Add to Bag</button>
+
+
+    <button class="wished" onclick="cartquantity--;
+
+    document.querySelector('#cart-summary').innerText = `your bag has ${cartquantity} items ` ; 
+    
+    ">MOVE TO wished</button>
+
+<BUtton class="Bag">Add to 1+1 sale items</BUtton>
+
+
+    <h1 id="cart-summary"></h1>
+
+
+    <script>
+
+        let cartquantity = 6;
+
+        document.querySelector('#cart-summary').innerText = `your bag has ${cartquantity} items `;
+
+        console.log(eval('9+9*9+4'));
+
+
+    </script>
+</body>
+
+</html>
